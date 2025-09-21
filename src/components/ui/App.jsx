@@ -6,7 +6,7 @@
  * @author Code <your-ai-collaborator>
  */
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 
 /**
  * @description The main application component.
@@ -18,34 +18,49 @@ const App = ({ questions }) => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
   const [rotation, setRotation] = useState(0);
   const [recentlyShown, setRecentlyShown] = useState([]);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isAnswered, setIsAnswered] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+
+  const handleAnswerClick = (answer) => {
+    if (isAnswered) return;
+
+    const correctAnswer = selectedQuestion.correct_answer;
+    setSelectedAnswer(answer);
+    setIsAnswered(true);
+    if (answer === correctAnswer) {
+      setIsCorrect(true);
+    } else {
+      setIsCorrect(false);
+    }
+  };
+
+  const handleNextQuestion = () => {
+    setSelectedQuestion(null);
+    setSelectedAnswer(null);
+    setIsAnswered(false);
+    setIsCorrect(false);
+    handleSpin();
+  };
 
   const handleSpin = () => {
-    // Disable spin if already spinning or if there are no questions
     if (isSpinning || !questions || questions.length === 0) return;
 
-    // Filter out questions that have been recently shown
     const availableQuestions = questions.filter(q => !recentlyShown.includes(q.id));
-
-    // If we've shown all questions recently, reset the pool to the full list.
-    // This is a fallback to ensure we never run out of questions to show.
     const questionsToSpinFrom = availableQuestions.length > 0 ? availableQuestions : questions;
 
     setIsSpinning(true);
-    // Add a large rotation base plus a random amount for a variable landing spot
     const newRotation = rotation + 360 * 10 + Math.floor(Math.random() * 360);
     setRotation(newRotation);
 
-    const spinDuration = 4000; // This must match the CSS transition duration
+    const spinDuration = 4000;
 
     setTimeout(() => {
       const randomIndex = Math.floor(Math.random() * questionsToSpinFrom.length);
       const question = questionsToSpinFrom[randomIndex];
       setSelectedQuestion(question);
 
-      // Update the list of recently shown questions
       const updatedRecentlyShown = [question.id, ...recentlyShown];
-
-      // Keep the list at a max size of 3 to prevent running out of options
       if (updatedRecentlyShown.length > 3) {
         updatedRecentlyShown.pop();
       }
@@ -54,6 +69,12 @@ const App = ({ questions }) => {
       setIsSpinning(false);
     }, spinDuration);
   };
+
+  const shuffledAnswers = useMemo(() => {
+    if (!selectedQuestion) return [];
+    const answers = [...selectedQuestion.incorrect_answers, selectedQuestion.correct_answer];
+    return answers.sort(() => Math.random() - 0.5);
+  }, [selectedQuestion]);
 
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4 font-sans">
@@ -66,7 +87,6 @@ const App = ({ questions }) => {
             className="absolute w-full h-full rounded-full border-4 border-dashed border-gray-600 transition-transform duration-[4000ms] ease-out"
             style={{ transform: `rotate(${rotation}deg)` }}
           >
-            {/* Use the questions from props to render the wheel segments */}
             {questions && questions.map((q, i) => (
               <div
                 key={q.id}
@@ -96,7 +116,6 @@ const App = ({ questions }) => {
           {isSpinning ? 'Spinning...' : 'Spin the Wheel'}
         </button>
 
-        {/* Handle case where questions might fail to load */}
         {(!questions || questions.length === 0) && !isSpinning && (
             <p className="text-red-500 mt-4">Could not load questions. Please try again later.</p>
         )}
@@ -105,16 +124,49 @@ const App = ({ questions }) => {
           <div className="mt-8 p-6 bg-gray-800 rounded-lg shadow-xl text-left animate-fade-in">
             <h2 className="text-xl font-bold text-cyan-400 mb-2">{selectedQuestion.category}</h2>
             <p className="mb-4">{selectedQuestion.question}</p>
-            <ul className="space-y-2">
-              <li className="bg-green-500 bg-opacity-20 p-2 rounded">
-                <strong>Correct:</strong> {selectedQuestion.correct_answer}
-              </li>
-              {selectedQuestion.incorrect_answers.map((answer, index) => (
-                <li key={index} className="bg-red-500 bg-opacity-20 p-2 rounded">
-                  {answer}
-                </li>
-              ))}
-            </ul>
+            <div className="space-y-2">
+              {shuffledAnswers.map((answer, index) => {
+                const isSelected = selectedAnswer === answer;
+                const isCorrectAnswer = answer === selectedQuestion.correct_answer;
+
+                let buttonClass = "w-full p-2 rounded text-left transition-all duration-300 ease-in-out ";
+                if (isAnswered) {
+                  if (isCorrectAnswer) {
+                    buttonClass += "bg-green-500 bg-opacity-50";
+                  } else if (isSelected) {
+                    buttonClass += "bg-red-500 bg-opacity-50";
+                  } else {
+                    buttonClass += "bg-gray-700";
+                  }
+                } else {
+                  buttonClass += "bg-gray-700 hover:bg-gray-600";
+                }
+
+                return (
+                  <button
+                    key={index}
+                    onClick={() => handleAnswerClick(answer)}
+                    disabled={isAnswered}
+                    className={buttonClass}
+                  >
+                    {answer}
+                  </button>
+                );
+              })}
+            </div>
+            {isAnswered && (
+              <div className="mt-4">
+                <p className={`font-bold ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
+                  {isCorrect ? 'Correct!' : 'Incorrect!'}
+                </p>
+                <button
+                  onClick={handleNextQuestion}
+                  className="mt-4 w-full px-6 py-2 bg-cyan-600 text-white font-bold rounded-lg shadow-md hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-75 transition-all"
+                >
+                  Next Question
+                </button>
+              </div>
+            )}
             <a
               href={selectedQuestion.source_link}
               target="_blank"
