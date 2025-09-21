@@ -1,0 +1,602 @@
+[
+  {
+    "category": "AI & Machine Learning",
+    "question": "In 2020, DeepMind published a landmark paper in Nature detailing an AI system that achieved highly accurate predictions of protein structure, significantly advancing the field of biology. What is the name of this system?",
+    "correct_answer": "AlphaFold 2",
+    "incorrect_answers": [
+      "DeepMind Protein Predictor",
+      "RosettaFold",
+      "IBM Watson Genomics"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-021-03819-2",
+    "id": "8654fbeb-5f77-4e33-a72f-b7b3f3d5ef7c"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "What neural network architecture, introduced by Google Brain in 2017, revolutionized natural language processing by enabling parallel processing of input sequences and forming the basis for models like BERT, GPT-3, and T5?",
+    "correct_answer": "Transformer",
+    "incorrect_answers": [
+      "Recurrent Neural Network (RNN)",
+      "Convolutional Neural Network (CNN)",
+      "Long Short-Term Memory (LSTM)"
+    ],
+    "source_link": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+    "id": "782a0e27-1105-4672-8970-b7e39cfbe567"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Introduced in a 2019 paper by Google Research, what technique dramatically reduces the computational cost of training large-scale self-attention models by approximating the full attention mechanism, enabling models with sequence lengths up to 8192?",
+    "correct_answer": "Reformer",
+    "incorrect_answers": [
+      "BERT",
+      "GPT-2",
+      "AlphaZero"
+    ],
+    "source_link": "https://arxiv.org/pdf/2001.04451.pdf",
+    "id": "208ec8d5-4148-4df9-b93a-bd6cb1dee77a"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2019, Google AI Quantum announced achieving 'quantum supremacy' using a 53-qubit superconducting processor. What was the name of this processor?",
+    "correct_answer": "Sycamore",
+    "incorrect_answers": [
+      "Osprey",
+      "Eagle",
+      "Falcon"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-019-1666-5",
+    "id": "3d5835df-9c66-4fbc-9715-d2d641812f70"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "Which major tech company announced in late 2022 the release of 'Osprey,' a 433-qubit quantum processor, marking a significant step towards quantum computers that can address practical challenges beyond current classical computation limits?",
+    "correct_answer": "IBM",
+    "incorrect_answers": [
+      "Google",
+      "Intel",
+      "Microsoft"
+    ],
+    "source_link": "https://www.ibm.com/blogs/research/2022/11/ibm-quantum-roadmap-2025/",
+    "id": "9bf1a431-4f1f-4f89-a413-03abf313767e"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2023, researchers at QuEra Computing, MIT, and Harvard demonstrated the first error-corrected logical qubit using neutral atoms arranged in 2D arrays. What type of qubits did they employ in this experiment?",
+    "correct_answer": "Rydberg qubits",
+    "incorrect_answers": [
+      "Superconducting qubits",
+      "Trapped-ion qubits",
+      "Topological qubits"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-023-06603-6",
+    "id": "48b47f7e-99ce-4d58-96d0-1565142703f1"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "A patent granted in 2021 to Intel Corporation details a method for monolithically integrating lasers on a silicon wafer for advanced optical communication. What is the key technology described for achieving this integration?",
+    "correct_answer": "Hybrid silicon and III-V semiconductor lasers",
+    "incorrect_answers": [
+      "Quantum dot lasers",
+      "Free-electron lasers",
+      "Chemical oxygen-iodine lasers"
+    ],
+    "source_link": "https://patents.google.com/patent/US11043308B2/en",
+    "id": "e48531a1-cd43-4d59-9afc-91d3ed8291df"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "In 2018, researchers at the Max Planck Institute of Quantum Optics and Ludwig-Maximilians-Universität München demonstrated a compact, high-power femtosecond laser system based on thin-disk technology. What was a primary application area highlighted for such high-power, ultrashort pulse lasers?",
+    "correct_answer": "Precision material processing",
+    "incorrect_answers": [
+      "Long-range wireless charging",
+      "Photovoltaic energy conversion",
+      "Biological imaging through dense tissue"
+    ],
+    "source_link": "https://opg.optica.org/ol/abstract.cfm?uri=ol-43-15-3746",
+    "id": "30a89cb5-09b8-47bf-b0d1-382e4204929d"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "What novel neural rendering technique, introduced by Mildenhall et al. in 2020, uses a sparsely sampled set of 2D images to synthesize new views of a complex scene by optimizing an underlying continuous volumetric scene function?",
+    "correct_answer": "Neural Radiance Fields (NeRF)",
+    "incorrect_answers": [
+      "Signed Distance Fields (SDF)",
+      "Voxel Carving",
+      "Photogrammetry Reconstruction"
+    ],
+    "source_link": "https://arxiv.org/pdf/2003.08934.pdf",
+    "id": "874f8d6a-d247-428c-97a3-520f2533a4fb"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "In a 2017 SIGGRAPH course, what highly influential open-source framework did Pixar Animation Studios detail, designed for robust interchange and scalable composition of 3D scenes and assets across various content creation tools?",
+    "correct_answer": "Universal Scene Description (USD)",
+    "incorrect_answers": [
+      "OpenVDB",
+      "MaterialX",
+      "Alembic"
+    ],
+    "source_link": "https://graphics.pixar.com/usd/downloads/siggraph_2017_course_notes.pdf",
+    "id": "3cebcf23-6a1b-4c1d-b279-5619b29f15aa"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "What novel neural network architecture, introduced in a 2017 Google paper titled 'Attention Is All You Need,' revolutionized natural language processing by relying solely on attention mechanisms, eschewing recurrence and convolutions?",
+    "correct_answer": "Transformer",
+    "incorrect_answers": [
+      "Recurrent Neural Network (RNN)",
+      "Convolutional Neural Network (CNN)",
+      "Long Short-Term Memory (LSTM)"
+    ],
+    "source_link": "https://arxiv.org/abs/1706.03762",
+    "id": "639c1a3c-9c67-4dd3-b832-7b94a2448357"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2021, which company unveiled its 127-qubit 'Eagle' quantum processor, marking a significant step towards larger-scale quantum computation that could not be simulated on a classical supercomputer?",
+    "correct_answer": "IBM",
+    "incorrect_answers": [
+      "Google",
+      "D-Wave Systems",
+      "Rigetti Computing"
+    ],
+    "source_link": "https://www.ibm.com/blogs/research/2021/11/16/eagle-quantum-processor/",
+    "id": "393a693c-1c0f-477d-9839-1951020c21da"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "A 2023 patent describes a method for material processing using ultra-short pulsed lasers with high pulse energy. What is a key advantage of using ultra-short pulsed lasers for precision material processing compared to continuous-wave lasers?",
+    "correct_answer": "Reduced heat-affected zone (minimizing thermal damage)",
+    "incorrect_answers": [
+      "Higher material removal rates for all materials",
+      "Significantly lower capital cost for the laser system",
+      "Simpler optical setup requirements"
+    ],
+    "source_link": "https://patents.google.com/patent/US11774574B2",
+    "id": "acc12e3c-3ebd-479b-be91-1e0956c33e11"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "What novel representation, introduced in a 2020 ECCV paper titled 'NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis,' uses a fully-connected deep neural network to implicitly represent a 3D scene as a continuous 5D function for novel view synthesis?",
+    "correct_answer": "Neural Radiance Fields (NeRF)",
+    "incorrect_answers": [
+      "Signed Distance Functions (SDFs)",
+      "Voxel Grids",
+      "Point Clouds"
+    ],
+    "source_link": "https://arxiv.org/abs/2003.08934",
+    "id": "ce949c00-e182-4530-b518-595092383b24"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "What AI system, developed by DeepMind and published in *Nature* in 2021, achieved unprecedented accuracy in predicting protein 3D structures from amino acid sequences, revolutionizing structural biology?",
+    "correct_answer": "AlphaFold 2",
+    "incorrect_answers": [
+      "AlphaGo",
+      "GPT-3",
+      "DALL-E 2"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-021-03819-2",
+    "id": "1364566a-b79f-4d23-96d0-68421de287b4"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2019, Google's Sycamore processor reportedly achieved 'quantum supremacy' by performing a computational task intractable for classical supercomputers. This achievement was published in what specific scientific journal?",
+    "correct_answer": "Nature",
+    "incorrect_answers": [
+      "Science",
+      "Physical Review Letters",
+      "PNAS"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-019-1663-9",
+    "id": "05c72823-cb05-41b0-a2e6-457c2e704c45"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "A 2021 patent details an optical system designed to enhance the sensitivity of gravitational wave detectors like LIGO. What specific optical component is often used in such systems to 'fold' the laser path and effectively increase the interferometer's arm length?",
+    "correct_answer": "Fabry-Pérot cavity",
+    "incorrect_answers": [
+      "Beam splitter",
+      "Diffraction grating",
+      "Polarizing filter"
+    ],
+    "source_link": "https://patents.google.com/patent/US10931206B2",
+    "id": "ae5eb58a-a9a5-4e04-9910-9b78a11651b3"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "A 2020 patent by NVIDIA describes methods and systems for accelerating ray tracing in graphics processing units. What fundamental graphics rendering technique does ray tracing emulate to produce highly realistic lighting, reflections, and shadows?",
+    "correct_answer": "The physical behavior of light",
+    "incorrect_answers": [
+      "Rasterization of polygons",
+      "Texture mapping",
+      "Vertex shading"
+    ],
+    "source_link": "https://patents.google.com/patent/US10650567B2",
+    "id": "5fa83faa-9a0a-46ee-ad56-f0cfbe77943c"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "What class of generative models, exemplified by papers like 'Denoising Diffusion Probabilistic Models' from 2020, has become prominent for high-quality image synthesis by iteratively denoisifying a noisy input?",
+    "correct_answer": "Diffusion models",
+    "incorrect_answers": [
+      "Generative Adversarial Networks (GANs)",
+      "Variational Autoencoders (VAEs)",
+      "Recurrent Neural Networks (RNNs)"
+    ],
+    "source_link": "https://arxiv.org/abs/2006.11239",
+    "id": "ccd7a3cc-00dc-4d97-8f84-2b4e12af83bd"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "A 2021 paper in *Physical Review Applied* describes a protocol for a fiber-integrated quantum repeater, a critical component for enabling what long-distance communication network?",
+    "correct_answer": "Quantum internet",
+    "incorrect_answers": [
+      "Classical internet",
+      "Satellite communication network",
+      "Optical wireless network"
+    ],
+    "source_link": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.034024",
+    "id": "98af8e5f-6b99-409f-abf1-6fdcf7826493"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Google DeepMind, in collaboration with Google Research, introduced a highly capable, multimodal large language model in December 2023. What is the name of this model family, designed to understand and operate across various data types?",
+    "correct_answer": "Gemini",
+    "incorrect_answers": [
+      "LaMDA",
+      "PaLM",
+      "Gato"
+    ],
+    "source_link": "https://arxiv.org/abs/2312.11805",
+    "id": "3c87d133-31dc-475b-9d8d-4ef4cc11dcd4"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In November 2022, IBM announced a quantum processor featuring 433 superconducting qubits, significantly advancing the scale of quantum hardware. What is the designated name for this processor?",
+    "correct_answer": "Osprey",
+    "incorrect_answers": [
+      "Eagle",
+      "Falcon",
+      "Condor"
+    ],
+    "source_link": "https://newsroom.ibm.com/2022-11-09-IBM-Unveils-Osprey-The-Worlds-Largest-Quantum-Processor-with-433-Qubits",
+    "id": "68ac908c-87cc-4849-a0f9-113625f5d33f"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "Which novel neural rendering technique, introduced in a 2020 paper, enables the synthesis of photorealistic novel views of complex 3D scenes by optimizing a continuous volumetric scene function using a neural network?",
+    "correct_answer": "Neural Radiance Fields (NeRF)",
+    "incorrect_answers": [
+      "Voxel-based Rendering",
+      "Signed Distance Fields (SDFs)",
+      "Point Cloud Generation"
+    ],
+    "source_link": "https://arxiv.org/abs/2003.08934",
+    "id": "17b0b923-993f-4a29-9e52-62aba6af67ce"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "In December 2022, researchers at Lawrence Livermore National Laboratory achieved fusion ignition, producing more energy than the laser input, using which powerful inertial confinement fusion research facility?",
+    "correct_answer": "National Ignition Facility (NIF)",
+    "incorrect_answers": [
+      "JET (Joint European Torus)",
+      "ITER (International Thermonuclear Experimental Reactor)",
+      "Wendelstein 7-X"
+    ],
+    "source_link": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.025102",
+    "id": "e08a6001-ef43-474d-9a28-acd4c15ccc85"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Which groundbreaking neural network architecture, introduced in a 2017 paper, revolutionized natural language processing by entirely forsaking recurrent and convolutional layers in favor of self-attention mechanisms?",
+    "correct_answer": "Transformer",
+    "incorrect_answers": [
+      "Recurrent Neural Network (RNN)",
+      "Convolutional Neural Network (CNN)",
+      "Long Short-Term Memory (LSTM)"
+    ],
+    "source_link": "https://arxiv.org/abs/1706.03762",
+    "id": "9fb26eb4-8df4-4733-a690-ffe7803753bc"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2022, a research team demonstrated an entangled 256-qubit array using highly coherent qubits based on individual atoms trapped by optical tweezers. What type of qubits were employed in this significant neutral-atom quantum computing milestone?",
+    "correct_answer": "Neutral Atom (Rydberg) Qubits",
+    "incorrect_answers": [
+      "Superconducting Transmon Qubits",
+      "Ion Trap Qubits",
+      "Topological Qubits"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-022-04532-6",
+    "id": "969e0479-1684-4254-b4fd-84f8c70f8812"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "A 2020 U.S. patent, assigned to NVIDIA, details a method for accelerating ray tracing operations using a graphics processing unit, a key technology enabling real-time photorealistic rendering in games and applications. What is the core technology described?",
+    "correct_answer": "Real-time Ray Tracing Acceleration",
+    "incorrect_answers": [
+      "Rasterization Optimization",
+      "Vertex Shader Processing",
+      "Texture Mapping Compression"
+    ],
+    "source_link": "https://patents.google.com/patent/US10853907B2",
+    "id": "e2e9930c-6d74-4c6f-bec2-8dae413f4e79"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "A 2021 U.S. patent, assigned to Caltech, describes a system and method for controlling a laser beam within an interferometer, a technology crucial for sensitive measurements like the detection of gravitational waves by large observatories. Which major collaboration widely uses this type of laser interferometry?",
+    "correct_answer": "LIGO (Laser Interferometer Gravitational-Wave Observatory)",
+    "incorrect_answers": [
+      "ALMA (Atacama Large Millimeter/submillimeter Array)",
+      "Hubble Space Telescope",
+      "Square Kilometre Array (SKA)"
+    ],
+    "source_link": "https://patents.google.com/patent/US11145330B1",
+    "id": "9e558b99-1d4f-41f5-b311-65ed9dd5048e"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Which class of generative models, notably advanced by a 2020 paper from Ho, Jain, and Abbeel, has become foundational for high-quality image, audio, and video generation by learning to iteratively reverse a gradual noise process?",
+    "correct_answer": "Denoising Diffusion Probabilistic Models (DDPMs)",
+    "incorrect_answers": [
+      "Generative Adversarial Networks (GANs)",
+      "Variational Autoencoders (VAEs)",
+      "Recurrent Neural Networks (RNNs)"
+    ],
+    "source_link": "https://arxiv.org/abs/2006.11239",
+    "id": "75a42c0f-9db6-4de5-b9e5-fd20839a61bb"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2023, which company, in collaboration with the University of New South Wales, announced the successful demonstration of quantum error correction on a silicon quantum processor, a vital step towards fault-tolerant quantum computers?",
+    "correct_answer": "Silicon Quantum Computing (SQC)",
+    "incorrect_answers": [
+      "Google Quantum AI",
+      "PsiQuantum",
+      "Rigetti Computing"
+    ],
+    "source_link": "https://www.nature.com/articles/s41567-023-02263-x",
+    "id": "0a796169-df01-468c-b2ca-e77a76b986d9"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "What foundational neural network architecture, introduced in 2017, significantly advanced natural language processing tasks by relying solely on attention mechanisms without recurrence or convolutions?",
+    "correct_answer": "Transformer",
+    "incorrect_answers": [
+      "Recurrent Neural Network (RNN)",
+      "Convolutional Neural Network (CNN)",
+      "Long Short-Term Memory (LSTM)"
+    ],
+    "source_link": "https://arxiv.org/pdf/1706.03762.pdf",
+    "id": "be8eb6b6-fa00-402a-9629-33fefc221d28"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Which class of generative models, exemplified by techniques like Denoising Diffusion Probabilistic Models (DDPMs), has recently achieved remarkable success in synthesizing high-quality images by iteratively denoising a noisy input?",
+    "correct_answer": "Diffusion Models",
+    "incorrect_answers": [
+      "Generative Adversarial Networks (GANs)",
+      "Variational Autoencoders (VAEs)",
+      "Restricted Boltzmann Machines (RBMs)"
+    ],
+    "source_link": "https://arxiv.org/pdf/2006.11239.pdf",
+    "id": "ac5a99cc-1dac-47b2-99e2-644efae47b83"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2022, IBM unveiled a quantum processor with 433 superconducting qubits, marking a significant step in scaling quantum hardware. What is the name of this processor?",
+    "correct_answer": "Osprey",
+    "incorrect_answers": [
+      "Eagle",
+      "Condor",
+      "Falcon"
+    ],
+    "source_link": "https://research.ibm.com/blog/433-qubit-quantum-processor-osprey",
+    "id": "5d8b49d7-1905-4ee8-a517-317e794c4faf"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "Which type of topological quantum error correcting code, demonstrated in a 2023 Nature paper for its exponential suppression of errors, is often explored for its potential to scale fault-tolerant quantum computation using qubits arranged on a 2D lattice?",
+    "correct_answer": "Surface code",
+    "incorrect_answers": [
+      "Shor code",
+      "Steane code",
+      "Repetition code"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-022-05461-1",
+    "id": "76243a07-a330-4d4e-8123-2a8bfaa0eccb"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "The Extreme Light Infrastructure (ELI) is a pan-European research project focused on building high-power laser facilities. What is the peak power output scale that these facilities aim to achieve for their primary laser systems, as described in scientific reports from 2018 onwards?",
+    "correct_answer": "Petawatt",
+    "incorrect_answers": [
+      "Terawatt",
+      "Gigawatt",
+      "Megawatt"
+    ],
+    "source_link": "https://iopscience.iop.org/article/10.1088/1742-6596/1023/1/012004",
+    "id": "287d27cd-341e-4050-9626-e77070896c30"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "A 2019 patent (US10315228B2) describes a femtosecond laser system and method for processing materials. For what type of industrial application is this system primarily optimized?",
+    "correct_answer": "Precision material processing",
+    "incorrect_answers": [
+      "Long-range optical communication",
+      "High-resolution astronomical imaging",
+      "Quantum entanglement generation"
+    ],
+    "source_link": "https://patents.google.com/patent/US10315228B2/en",
+    "id": "faa929c1-8f80-4c56-9bd1-8970cdf44728"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "Which novel representation for synthesizing new views of complex 3D scenes, introduced at ECCV 2020, uses a fully connected deep neural network to implicitly encode a scene's geometry and appearance?",
+    "correct_answer": "Neural Radiance Fields (NeRF)",
+    "incorrect_answers": [
+      "Signed Distance Fields (SDF)",
+      "Voxel Grids",
+      "Point Clouds"
+    ],
+    "source_link": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123130635.pdf",
+    "id": "a7271508-7d2c-4084-9084-6690ae221ad4"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "Which GPU architecture, launched by NVIDIA in 2018, was the first to feature dedicated hardware cores (RT Cores) designed to accelerate real-time ray tracing in consumer graphics?",
+    "correct_answer": "Turing",
+    "incorrect_answers": [
+      "Pascal",
+      "Maxwell",
+      "Volta"
+    ],
+    "source_link": "https://developer.nvidia.com/blog/nvidia-rtx-ray-tracing-gpu/",
+    "id": "43dfbb8f-bd22-40af-bd36-a5730bb04722"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Which AI system, developed by DeepMind and published in 2021, achieved unprecedented accuracy in predicting the 3D structure of proteins from their amino acid sequence, revolutionizing structural biology?",
+    "correct_answer": "AlphaFold",
+    "incorrect_answers": [
+      "AlphaGo",
+      "AlphaZero",
+      "MuZero"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-021-03819-2",
+    "id": "34848182-fee0-4bd4-9f1e-fd3ddfbd61a1"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2019, Google's quantum computing team demonstrated 'quantum supremacy' using a 53-qubit superconducting processor for a specific computational task. What was the name of this processor?",
+    "correct_answer": "Sycamore",
+    "incorrect_answers": [
+      "Bristlecone",
+      "Willow",
+      "Aspen"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-019-1663-9",
+    "id": "03c959b4-7c11-49c8-beb1-82afae18ca4e"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Which seminal 2017 paper introduced the \"Transformer\" architecture, revolutionizing sequence modeling and enabling the development of large language models?",
+    "correct_answer": "Attention Is All You Need",
+    "incorrect_answers": [
+      "ImageNet Classification with Deep Convolutional Neural Networks",
+      "Generative Adversarial Networks",
+      "ResNet: Deep Residual Learning for Image Recognition"
+    ],
+    "source_link": "https://arxiv.org/abs/1706.03762",
+    "id": "68b754d4-8576-4735-9360-15e422628eaa"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2019, Google's Sycamore processor achieved what significant quantum computing milestone, demonstrating a computation infeasible for classical supercomputers?",
+    "correct_answer": "Quantum Supremacy",
+    "incorrect_answers": [
+      "First quantum entanglement with 1000 qubits",
+      "Room-temperature superconductivity",
+      "Discovery of a stable topological qubit"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-019-1663-9",
+    "id": "867de76a-4ece-4469-bce4-c82e399b250a"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "First introduced in a 2020 ECCV paper, what neural rendering technique uses a small number of 2D images to synthesize novel views of complex 3D scenes by representing the scene as a continuous volumetric function?",
+    "correct_answer": "Neural Radiance Fields (NeRF)",
+    "incorrect_answers": [
+      "Signed Distance Fields (SDFs)",
+      "Voxel Grids",
+      "Ray Tracing Accelerators"
+    ],
+    "source_link": "https://arxiv.org/abs/2003.08934",
+    "id": "5f20c899-208b-4131-993b-d6cb362261ed"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "Which laser technology advancement, critical for studying electron dynamics on their natural timescale, enables the generation of extremely short pulses, often measured in quintillionths of a second?",
+    "correct_answer": "Attosecond pulse generation",
+    "incorrect_answers": [
+      "Femtosecond pulse compression",
+      "Continuous-wave fiber lasers",
+      "Exawatt peak power systems"
+    ],
+    "source_link": "https://www.nature.com/articles/nphoton.2016.273",
+    "id": "5ac55970-a8cc-4b46-ac81-2cfc17e6514b"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Developed by DeepMind, what AI system achieved groundbreaking accuracy in protein structure prediction, significantly advancing structural biology, as reported in a 2021 Nature paper?",
+    "correct_answer": "AlphaFold",
+    "incorrect_answers": [
+      "DeepBlue",
+      "Watson",
+      "AlphaGo"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-021-03819-2",
+    "id": "fc82ed33-b574-4271-a403-5d5f545678fc"
+  },
+  {
+    "category": "Quantum Computing",
+    "question": "In 2023, what major quantum computing research milestone did IBM researchers announce, demonstrating how quantum error correction can successfully reduce computational errors in a superconducting quantum processor?",
+    "correct_answer": "Error mitigation/reduction via quantum error correction",
+    "incorrect_answers": [
+      "First successful teleportation of a quantum state across a continent",
+      "The first quantum computer with over 100,000 logical qubits",
+      "Discovery of a stable room-temperature superconductor for qubits"
+    ],
+    "source_link": "https://www.nature.com/articles/s41586-023-05995-4",
+    "id": "832b7792-7cb6-4e43-942d-a6c96c84bbca"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "What novel real-time rendering technique, introduced in a 2023 SIGGRAPH paper, represents 3D scenes using a collection of anisotropic 3D Gaussians, achieving high visual quality and real-time performance?",
+    "correct_answer": "3D Gaussian Splatting",
+    "incorrect_answers": [
+      "Sparse Voxel Octrees (SVOs)",
+      "Neural Implicit Surfaces",
+      "Polygon Mesh LOD systems"
+    ],
+    "source_link": "https://arxiv.org/abs/2308.04079",
+    "id": "772dfe9b-6151-4594-8141-18cec7cefa64"
+  },
+  {
+    "category": "Laser Technology",
+    "question": "Which advanced spectroscopic technique, increasingly utilized for rapid and high-resolution gas sensing, employs two mutually coherent optical frequency combs derived from a single microresonator?",
+    "correct_answer": "Microresonator-based dual-comb spectroscopy",
+    "incorrect_answers": [
+      "Raman spectroscopy",
+      "LIDAR remote sensing",
+      "Femtosecond pump-probe spectroscopy"
+    ],
+    "source_link": "https://www.nature.com/articles/s41566-021-00913-9",
+    "id": "29b66729-2309-47b5-9d5a-bf5f3e68aef2"
+  },
+  {
+    "category": "AI & Machine Learning",
+    "question": "Which class of generative models, exemplified by DALL-E 2 and Stable Diffusion, gained prominence around 2022 for its ability to generate high-quality images from text descriptions by iteratively denoising a random signal?",
+    "correct_answer": "Diffusion Models",
+    "incorrect_answers": [
+      "Generative Adversarial Networks (GANs)",
+      "Variational Autoencoders (VAEs)",
+      "Recurrent Neural Networks (RNNs)"
+    ],
+    "source_link": "https://arxiv.org/abs/2006.11239",
+    "id": "fe145577-1fbb-4af2-9b1c-716379a0fff7"
+  },
+  {
+    "category": "Animation & Graphics",
+    "question": "What recent advancement in computer graphics, demonstrated in papers like 'Neural Actor Fields' (2022), allows for photorealistic representation and animation of human performers using neural networks and 3D implicit functions?",
+    "correct_answer": "Neural Actor Fields",
+    "incorrect_answers": [
+      "Motion Capture Retargeting",
+      "Traditional Skeletal Animation",
+      "Physically Based Deformers"
+    ],
+    "source_link": "https://arxiv.org/abs/2203.04740",
+    "id": "8561c97d-8a75-474a-85ad-47f75b247bd6"
+  }
+]
